@@ -1,3 +1,0 @@
-﻿  Main.cpp
-G:\DirectX12\XD3DRendering\XD3DRendering\d3dApp.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-  XD3DRendering.vcxproj -> G:\DirectX12\XD3DRendering\x64\Debug\XD3DRendering.exe
