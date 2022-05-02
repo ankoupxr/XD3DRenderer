@@ -16,6 +16,17 @@
 //Misc
 #include <mutex>
 
+#define USE_PIX 1
 
-#include "Core/DataTypes.h"
 #include "Core/MinWindows.h"
+#include "d3d12.h"
+#include <dxgi1_6.h>
+#define D3DX12_NO_STATE_OBJECT_HELPERS
+#include "d3dx12.h"
+
+#include "imgui.h"
+
+#include "Core/Defines.h"
+#include "Core/DataTypes.h"
+#include "Core/Delegates.h"
+#include "Core/RefCountPtr.h"
