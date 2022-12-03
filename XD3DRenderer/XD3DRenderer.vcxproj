@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{96229083-aa98-40c2-a8bc-c80978175900}</ProjectGuid>
+    <RootNamespace>XD3DRenderer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Component\CameraComponent.cpp" />
+    <ClCompile Include="Component\Component.cpp" />
+    <ClCompile Include="Component\MeshComponent.cpp" />
+    <ClCompile Include="Editor\GUI.cpp" />
+    <ClCompile Include="Graphic\Color.cpp" />
+    <ClCompile Include="Graphic\Point.cpp" />
+    <ClCompile Include="Graphic\Texture.cpp" />
+    <ClCompile Include="Graphic\Transform.cpp" />
+    <ClCompile Include="Graphic\XBoundingBox.cpp" />
+    <ClCompile Include="Graphic\XMatrix.cpp" />
+    <ClCompile Include="Graphic\XMesh.cpp" />
+    <ClCompile Include="Graphic\XVector2.cpp" />
+    <ClCompile Include="Graphic\XVector3.cpp" />
+    <ClCompile Include="Graphic\XVector4.cpp" />
+    <ClCompile Include="Graphic\XVertex.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12Buffer.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12CommandContext.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12DescriptorCache.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12Device.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12HeapSlotAllocator.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12MemoryAllocator.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12Resource.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12RHI.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12Texture.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12Util.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12View.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3D12Viewport.cpp" />
+    <ClCompile Include="Render\Mesh.cpp" />
+    <ClCompile Include="System\GameTimer.cpp" />
+    <ClCompile Include="System\RHI.cpp" />
+    <ClCompile Include="System\System.cpp" />
+    <ClCompile Include="System\XWorld.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Convert.h" />
+    <ClInclude Include="Component\CameraComponent.h" />
+    <ClInclude Include="Component\Component.h" />
+    <ClInclude Include="Component\MeshComponent.h" />
+    <ClInclude Include="Editor\GUI.h" />
+    <ClInclude Include="Graphic\Color.h" />
+    <ClInclude Include="Graphic\Point.h" />
+    <ClInclude Include="Graphic\Texture.h" />
+    <ClInclude Include="Graphic\TextureInfo.h" />
+    <ClInclude Include="Graphic\Transform.h" />
+    <ClInclude Include="Graphic\XBoundingBox.h" />
+    <ClInclude Include="Graphic\XMath.h" />
+    <ClInclude Include="Graphic\XMatrix.h" />
+    <ClInclude Include="Graphic\XMesh.h" />
+    <ClInclude Include="Graphic\XVector2.h" />
+    <ClInclude Include="Graphic\XVector3.h" />
+    <ClInclude Include="Graphic\XVector4.h" />
+    <ClInclude Include="Graphic\XVertex.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12Buffer.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12CommandContext.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12DescriptorCache.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12Device.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12HeapSlotAllocator.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12MemoryAllocator.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12Resource.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12RHI.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12Texture.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12Util.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12View.h" />
+    <ClInclude Include="PlatForm\D3D12\D3D12Viewport.h" />
+    <ClInclude Include="PlatForm\D3D12\d3dx12.h" />
+    <ClInclude Include="System\GameTimer.h" />
+    <ClInclude Include="System\RHI.h" />
+    <ClInclude Include="System\System.h" />
+    <ClInclude Include="System\XWorld.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

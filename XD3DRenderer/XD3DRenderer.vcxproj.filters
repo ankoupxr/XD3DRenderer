@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{9819d3a8-1b52-4893-858b-b5683a2435ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{6d670534-260b-4e4d-be3b-63453afc79ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Editor">
+      <UniqueIdentifier>{98e3557b-4fcf-4969-a3f0-03842685fa4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Editor">
+      <UniqueIdentifier>{c008b9ce-ed2a-4f06-ad5a-61d943c1fb78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Render">
+      <UniqueIdentifier>{0a7b2778-1eec-4082-81e7-5cf05070e85e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Render">
+      <UniqueIdentifier>{a112cbb6-b81b-4afe-87b6-3fd834315ef1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\System">
+      <UniqueIdentifier>{78247622-3681-4e79-8619-af1255cd3f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\System">
+      <UniqueIdentifier>{3d534cec-7d5a-4931-b7c5-e74a41c70dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\System\PlatForm">
+      <UniqueIdentifier>{3d2f408f-da8c-428b-82cc-9007bbe7e1f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\System\PlatForm\D3D12">
+      <UniqueIdentifier>{0f6efebe-452c-4a3b-9b04-7c5c2a4489fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\System\PlatForm">
+      <UniqueIdentifier>{2f1002df-9cb9-4753-b476-2aebdf311376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\System\PlatForm\D3D12">
+      <UniqueIdentifier>{4c850014-ec39-491d-84aa-ca28ca669ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Common">
+      <UniqueIdentifier>{96874e7b-b99e-4968-a144-90e0b5b1cf13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Component">
+      <UniqueIdentifier>{e7e25b96-3a71-4bba-98c6-62703aff9dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Component">
+      <UniqueIdentifier>{bc465aeb-b3a2-4b3d-bcf1-9027e196d3b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Graphic">
+      <UniqueIdentifier>{ce1a08da-6650-47d9-99f5-a4dcff89bc2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Graphic">
+      <UniqueIdentifier>{f5b04fc7-bf0b-4cff-bef4-73c18a14042f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Editor\GUI.cpp">
+      <Filter>Src\Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\Mesh.cpp">
+      <Filter>Src\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="System\GameTimer.cpp">
+      <Filter>Src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\System.cpp">
+      <Filter>Src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\XWorld.cpp">
+      <Filter>Src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\RHI.cpp">
+      <Filter>Src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12Device.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12RHI.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12CommandContext.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12DescriptorCache.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12Util.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12Resource.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12MemoryAllocator.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12Buffer.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12HeapSlotAllocator.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12Texture.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12View.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3D12Viewport.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\CameraComponent.cpp">
+      <Filter>Src\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Component.cpp">
+      <Filter>Src\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\MeshComponent.cpp">
+      <Filter>Src\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Point.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Transform.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\XBoundingBox.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\XMatrix.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\XMesh.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\XVector2.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\XVector3.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\XVector4.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\XVertex.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Color.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Texture.cpp">
+      <Filter>Src\Graphic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Editor\GUI.h">
+      <Filter>Include\Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="System\GameTimer.h">
+      <Filter>Include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\System.h">
+      <Filter>Include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="System\XWorld.h">
+      <Filter>Include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\d3dx12.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="System\RHI.h">
+      <Filter>Include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12Device.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12Util.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12RHI.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12CommandContext.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12DescriptorCache.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Convert.h">
+      <Filter>Include\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12Resource.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12MemoryAllocator.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12Buffer.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12HeapSlotAllocator.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12Texture.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12View.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3D12Viewport.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\CameraComponent.h">
+      <Filter>Include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Component.h">
+      <Filter>Include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\MeshComponent.h">
+      <Filter>Include\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Color.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Point.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Transform.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XBoundingBox.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XMath.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XMatrix.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XMesh.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XVector2.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XVector3.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XVector4.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\XVertex.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Texture.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\TextureInfo.h">
+      <Filter>Include\Graphic</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
