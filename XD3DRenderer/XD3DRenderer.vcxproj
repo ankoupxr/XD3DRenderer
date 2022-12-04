@@ -127,6 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Actor\Actor.cpp" />
+    <ClCompile Include="Actor\AreaLightActor.cpp" />
+    <ClCompile Include="Actor\CameraActor.cpp" />
+    <ClCompile Include="Actor\DirectionalLightActor.cpp" />
+    <ClCompile Include="Actor\MeshActor.cpp" />
+    <ClCompile Include="Actor\PointLightActor.cpp" />
+    <ClCompile Include="Actor\SpotLightActor.cpp" />
     <ClCompile Include="Component\CameraComponent.cpp" />
     <ClCompile Include="Component\Component.cpp" />
     <ClCompile Include="Component\MeshComponent.cpp" />
@@ -162,6 +169,14 @@
     <ClCompile Include="System\XWorld.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Actor\Actor.h" />
+    <ClInclude Include="Actor\AreaLightActor.h" />
+    <ClInclude Include="Actor\CameraActor.h" />
+    <ClInclude Include="Actor\DirectionalLightActor.h" />
+    <ClInclude Include="Actor\LightActor.h" />
+    <ClInclude Include="Actor\MeshActor.h" />
+    <ClInclude Include="Actor\PointLightActor.h" />
+    <ClInclude Include="Actor\SpotLightActor.h" />
     <ClInclude Include="Common\Convert.h" />
     <ClInclude Include="Component\CameraComponent.h" />
     <ClInclude Include="Component\Component.h" />

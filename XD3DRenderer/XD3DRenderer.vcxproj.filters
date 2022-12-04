@@ -52,6 +52,12 @@
     <Filter Include="Include\Graphic">
       <UniqueIdentifier>{f5b04fc7-bf0b-4cff-bef4-73c18a14042f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Include\Actor">
+      <UniqueIdentifier>{8d5cff69-21c3-4c5d-ada0-4ce01dea78e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Actor">
+      <UniqueIdentifier>{5fbfab5d-a6d4-46e7-a4a9-52adb9929849}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -150,6 +156,27 @@
     </ClCompile>
     <ClCompile Include="Graphic\Texture.cpp">
       <Filter>Src\Graphic</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\Actor.cpp">
+      <Filter>Src\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\AreaLightActor.cpp">
+      <Filter>Src\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\CameraActor.cpp">
+      <Filter>Src\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\DirectionalLightActor.cpp">
+      <Filter>Src\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\MeshActor.cpp">
+      <Filter>Src\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\PointLightActor.cpp">
+      <Filter>Src\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor\SpotLightActor.cpp">
+      <Filter>Src\Actor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +284,30 @@
     </ClInclude>
     <ClInclude Include="Graphic\TextureInfo.h">
       <Filter>Include\Graphic</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\Actor.h">
+      <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\AreaLightActor.h">
+      <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\CameraActor.h">
+      <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\DirectionalLightActor.h">
+      <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\LightActor.h">
+      <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\MeshActor.h">
+      <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\PointLightActor.h">
+      <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor\SpotLightActor.h">
+      <Filter>Include\Actor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
