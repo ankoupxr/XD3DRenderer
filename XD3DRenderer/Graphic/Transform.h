@@ -19,10 +19,10 @@ struct XRotator
 	static const XRotator Zero;
 };
 
-class TTransform
+class XTransform
 {
 public:
-	TTransform()
+	XTransform()
 	{
 		Location = XVector3::Zero;
 		Rotation = XRotator::Zero;
