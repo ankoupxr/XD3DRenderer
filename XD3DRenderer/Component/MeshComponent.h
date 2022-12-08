@@ -5,7 +5,7 @@
 #include <string>
 
 
-class MeshComponent : public XComponent
+class XMeshComponent : public XComponent
 {
 public:
 	void SetMeshName(std::string InMeshName);
