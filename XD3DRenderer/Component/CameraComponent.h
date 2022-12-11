@@ -2,11 +2,11 @@
 
 #include "Component.h"
 
-class CameraComponent : public XComponent
+class XCameraComponent : public XComponent
 {
 public:
-	CameraComponent();
-	~CameraComponent();
+	XCameraComponent();
+	~XCameraComponent();
 
 	// Location
 	virtual void SetWorldLocation(const XVector3& Location) override;
