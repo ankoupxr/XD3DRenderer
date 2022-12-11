@@ -1,67 +1,67 @@
 #include "CameraComponent.h"
 
-CameraComponent::CameraComponent()
+XCameraComponent::XCameraComponent()
 {
 	SetLens(0.25f * TMath::Pi, 1.0f, 0.1f, 100.0f);
 }
 
-CameraComponent::~CameraComponent()
+XCameraComponent::~XCameraComponent()
 {
 }
 
-void CameraComponent::SetWorldLocation(const XVector3& Location)
+void XCameraComponent::SetWorldLocation(const XVector3& Location)
 {
 	WorldTransform.Location = Location;
 	ViewDirty = true;
 }
 
-float CameraComponent::GetNearZ()const
+float XCameraComponent::GetNearZ()const
 {
 	return NearZ;
 }
 
-float CameraComponent::GetFarZ()const
+float XCameraComponent::GetFarZ()const
 {
 	return FarZ;
 }
 
-float CameraComponent::GetAspect()const
+float XCameraComponent::GetAspect()const
 {
 	return Aspect;
 }
 
-float CameraComponent::GetFovY()const
+float XCameraComponent::GetFovY()const
 {
 	return FovY;
 }
 
-float CameraComponent::GetFovX()const
+float XCameraComponent::GetFovX()const
 {
 	float halfWidth = 0.5f * GetNearWindowWidth();
 	return float(2.0f * atan(halfWidth / NearZ));
 }
 
-float CameraComponent::GetNearWindowWidth()const
+float XCameraComponent::GetNearWindowWidth()const
 {
 	return Aspect * NearWindowHeight;
 }
 
-float CameraComponent::GetNearWindowHeight()const
+float XCameraComponent::GetNearWindowHeight()const
 {
 	return NearWindowHeight;
 }
 
-float CameraComponent::GetFarWindowWidth()const
+float XCameraComponent::GetFarWindowWidth()const
 {
 	return Aspect * FarWindowHeight;
 }
 
-float CameraComponent::GetFarWindowHeight()const
+float XCameraComponent::GetFarWindowHeight()const
 {
 	return FarWindowHeight;
 }
 
-void CameraComponent::SetLens(float fovY, float aspect, float zn, float zf)
+void XCameraComponent::SetLens(float fovY, float aspect, float zn, float zf)
 {
 	// cache properties
 	FovY = fovY;
@@ -75,7 +75,7 @@ void CameraComponent::SetLens(float fovY, float aspect, float zn, float zf)
 	Proj = XMatrix::CreatePerspectiveFieldOfView(FovY, Aspect, NearZ, FarZ);
 }
 
-void CameraComponent::LookAt(const XVector3& pos, const XVector3& target, const XVector3& up)
+void XCameraComponent::LookAt(const XVector3& pos, const XVector3& target, const XVector3& up)
 {
 	XVector3 L = target - pos;
 	L.Normalize();
@@ -92,39 +92,39 @@ void CameraComponent::LookAt(const XVector3& pos, const XVector3& target, const 
 }
 
 
-XMatrix CameraComponent::GetView()const
+XMatrix XCameraComponent::GetView()const
 {
 	assert(!ViewDirty);
 	return View;
 }
 
-XMatrix CameraComponent::GetProj()const
+XMatrix XCameraComponent::GetProj()const
 {
 	return Proj;
 }
 
-void CameraComponent::MoveRight(float Dist)
+void XCameraComponent::MoveRight(float Dist)
 {
 	WorldTransform.Location += Dist * Right;
 
 	ViewDirty = true;
 }
 
-void CameraComponent::MoveForward(float Dist)
+void XCameraComponent::MoveForward(float Dist)
 {
 	WorldTransform.Location += Dist * Look;
 
 	ViewDirty = true;
 }
 
-void CameraComponent::MoveUp(float Dist)
+void XCameraComponent::MoveUp(float Dist)
 {
 	WorldTransform.Location += Dist * Up;
 
 	ViewDirty = true;
 }
 
-void CameraComponent::Pitch(float Degrees)
+void XCameraComponent::Pitch(float Degrees)
 {
 	float Radians = TMath::DegreesToRadians(Degrees);
 
@@ -137,7 +137,7 @@ void CameraComponent::Pitch(float Degrees)
 	ViewDirty = true;
 }
 
-void CameraComponent::RotateY(float Degrees)
+void XCameraComponent::RotateY(float Degrees)
 {
 	float Radians = TMath::DegreesToRadians(Degrees);
 
@@ -151,7 +151,7 @@ void CameraComponent::RotateY(float Degrees)
 	ViewDirty = true;
 }
 
-void CameraComponent::UpdateViewMatrix()
+void XCameraComponent::UpdateViewMatrix()
 {
 	if (ViewDirty)
 	{
@@ -192,12 +192,12 @@ void CameraComponent::UpdateViewMatrix()
 	}
 }
 
-void CameraComponent::SetPrevViewProj(const XMatrix& VP)
+void XCameraComponent::SetPrevViewProj(const XMatrix& VP)
 {
 	PrevViewProj = VP;
 }
 
-XMatrix CameraComponent::GetPrevViewProj() const
+XMatrix XCameraComponent::GetPrevViewProj() const
 {
 	return PrevViewProj;
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include "GameTimer.h"
+#include "XWorld.h"
 #include "../PlatForm/D3D12/D3D12RHI.h"
 
 class  System
