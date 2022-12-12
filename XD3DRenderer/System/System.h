@@ -50,10 +50,10 @@ protected:
     void EndFrame(const GameTimer& gt);
 
     // Convenience overrides for handling mouse input.
-    void OnMouseDown(WPARAM btnState, int x, int y) { World->OnMouseDown(btnState, x, y); }
-    void OnMouseUp(WPARAM btnState, int x, int y) { World->OnMouseUp(btnState, x, y); }
-    void OnMouseMove(WPARAM btnState, int x, int y) { World->OnMouseMove(btnState, x, y); }
-    void OnMouseWheel(float WheelDistance) { World->OnMouseWheel(WheelDistance); }
+    void OnMouseDown(WPARAM btnState, int x, int y) { XWorld->OnMouseDown(btnState, x, y); }
+    void OnMouseUp(WPARAM btnState, int x, int y) { XWorld->OnMouseUp(btnState, x, y); }
+    void OnMouseMove(WPARAM btnState, int x, int y) { XWorld->OnMouseMove(btnState, x, y); }
+    void OnMouseWheel(float WheelDistance) { XWorld->OnMouseWheel(WheelDistance); }
 
 protected:
     static System* EngineSingleton;

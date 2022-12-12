@@ -178,6 +178,9 @@
     <ClCompile Include="Actor\SpotLightActor.cpp">
       <Filter>Src\Actor</Filter>
     </ClCompile>
+    <ClCompile Include="PlatForm\D3D12\D3DShader.cpp">
+      <Filter>Src\System\PlatForm\D3D12</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Editor\GUI.h">
@@ -308,6 +311,12 @@
     </ClInclude>
     <ClInclude Include="Actor\SpotLightActor.h">
       <Filter>Include\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatForm\D3D12\D3DShader.h">
+      <Filter>Include\System\PlatForm\D3D12</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\FileHelper.h">
+      <Filter>Include\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

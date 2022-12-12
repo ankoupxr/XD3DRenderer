@@ -162,6 +162,7 @@
     <ClCompile Include="PlatForm\D3D12\D3D12Util.cpp" />
     <ClCompile Include="PlatForm\D3D12\D3D12View.cpp" />
     <ClCompile Include="PlatForm\D3D12\D3D12Viewport.cpp" />
+    <ClCompile Include="PlatForm\D3D12\D3DShader.cpp" />
     <ClCompile Include="Render\Mesh.cpp" />
     <ClCompile Include="System\GameTimer.cpp" />
     <ClCompile Include="System\RHI.cpp" />
@@ -178,6 +179,7 @@
     <ClInclude Include="Actor\PointLightActor.h" />
     <ClInclude Include="Actor\SpotLightActor.h" />
     <ClInclude Include="Common\Convert.h" />
+    <ClInclude Include="Common\FileHelper.h" />
     <ClInclude Include="Component\CameraComponent.h" />
     <ClInclude Include="Component\Component.h" />
     <ClInclude Include="Component\MeshComponent.h" />
@@ -207,6 +209,7 @@
     <ClInclude Include="PlatForm\D3D12\D3D12Util.h" />
     <ClInclude Include="PlatForm\D3D12\D3D12View.h" />
     <ClInclude Include="PlatForm\D3D12\D3D12Viewport.h" />
+    <ClInclude Include="PlatForm\D3D12\D3DShader.h" />
     <ClInclude Include="PlatForm\D3D12\d3dx12.h" />
     <ClInclude Include="System\GameTimer.h" />
     <ClInclude Include="System\RHI.h" />

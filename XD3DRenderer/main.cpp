@@ -16,7 +16,12 @@ public:
 
 	virtual void InitWorld(System* InEngine) override
 	{
-
+		//³õÊ¼»¯ÉãÏñ»ú
+		auto Camera = AddActor<XCameraActor>("Camera");
+		CameraComponent = Camera->GetCameraComponent();
+		CameraComponent->SetWorldLocation(XVector3(0.55f, 1.50f, -3.84f));
+		CameraComponent->RotateY(-120.0f);
+		CameraComponent->UpdateViewMatrix();
 	}
 };
 
